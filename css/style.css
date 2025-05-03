@@ -7,22 +7,25 @@ a:hover {
 }
 
 header{
-    background-color: rgb(237, 252, 230);
+    background-color: #E7F6DD;
     margin: 1em;
     border:0px;
     padding: 0.5em;
     font-size: large;
-    text
+}
+a{
+    color: green;
+    font-size: larger;
 }
 
 main{
-    background-color: rgb(237, 252, 230);
+    background-color: #E7F6DD;
     margin: 1em;
     padding: 1em;
 }
 
 footer{
-    background-color: rgb(237, 252, 230);
+    background-color: #E7F6DD;
     margin: 1em;
     padding: 0.5em;
 }
@@ -57,7 +60,6 @@ button{
 
 footer p{
     margin: 0%;
-
 }
 
 .spacer{
@@ -66,9 +68,14 @@ footer p{
 
 .active {
     font-weight: bold;
-    font-size: large;
+    font-size: larger;
 }
 
 .inactive{
     color: grey;
 }
+
+img{
+   max-width:100%; 
+}
+

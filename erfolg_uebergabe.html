@@ -15,12 +15,15 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/formular.js"></script>
+    <script src="js/header_footer.js"></script>
 </head>
 
-<!--header platzieren-->
-<div id="header"></div>
 
-<body onload="anzeigen()">
+
+<body onload="UebergabeAnzeigen()">
+    <!--header platzieren-->
+    <div id="header"></div>
+    
     <main>
         <!--Spalte 1-->
         <div class="row">
@@ -36,21 +39,41 @@
             </div>
             
             <div class="col-lg-6 col-sm-12">
-                <h1>Ihre Angaben:</h1>
+                <h1>Ihre Spende wurde registriert. Vielen Dank.</h1>
+                <h3>Hier finden Sie die Zusammenfassung Ihrer Daten:</h3>
                 <div class="spacer"></div>
-                <div id="output"></div>
-                <div class="spacer"></div>
-                <a class="btn btn-outline-success" href="index.html" role="button">Weiter Spende registrieren</a>
 
+                <table>
+                    <tr>
+                        <td>Kleidung:</td>
+                        <td id="outputKleidung"></td>
+                    </tr>
+                    <tr>
+                        <td>Krisenland:</td>
+                        <td id="outputKrisenland"></td>
+                    </tr>
+                    <tr>
+                        <td>Datum: </td>
+                        <td id="outputHeute"></td>
+                    </tr>
+                    <tr>
+                        <td>Zeit:</td>
+                        <td id="outputJetzt"></td>
+                    </tr>
+                    <tr>
+                        <td>Ort:</td>
+                        <td>Pulloverstadt</td>
+                    </tr>
+                </table>
+                
+                <div class="spacer"></div>
+                <a class="btn btn-outline-success" href="index.html" role="button">Weitere Spende registrieren</a>
 
             </div>
         </div>
     </main>
-    <!--header und footer interpretieren-->
-    <script src="js/header_footer.js"></script>
+
+    <!--footer platzieren-->
+    <div id="footer"></div>
 </body>
-
-<!--footer platzieren-->
-<div id="footer"></div>
-
 </html>

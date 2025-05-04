@@ -13,17 +13,17 @@
 
     <!--Einbindung des eigenene Stylesheets nach Bootstrap-->
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/header_footer.js"></script>
+    <script src="js/formular.js"></script>
+    <script src="js/check_plz.js"></script>
 </head>
 
-<!--header platzieren-->
-<div id="header"></div>
-
 <body>
+    <!--header platzieren-->
+    <div id="header"></div>
+    
     <main>
-        
-        
-
-        <!--Spalte 1-->
         <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <h3>Ablauf der Spende</h3>
@@ -54,9 +54,7 @@
                 <input type="number" id="plz" class="form-control" placeholder="Postleitzahl">
                 <button id= "CheckPLZButton" onclick="check_plz()" class="btn btn-outline-success">Postleitzahl prüfen</button>
                 <div id="plzOutput"></div>
-
                 <div class="spacer"></div>
-
                 <Label for="kleidung">Kleidung</Label>
                 <textarea id="kleidung" class="form-control" placeholder="Liste der Kleidungsstücke"></textarea>
                 <Label for="krisenland">Krisenland</Label>
@@ -64,17 +62,12 @@
                 <script src="js/krisengebiete.js"></script>
                 <div class="spacer"></div>
                 
-                <button onclick="speichern()" class="btn btn-outline-success">Abschicken</button>
+                <button onclick="AbholungSpeichern()" class="btn btn-outline-success">Abschicken</button>
             </div>
         </div>
     </main>
-    <!--header und footer interpretieren-->
-    <script src="js/header_footer.js"></script>
-    <script src="js/formular.js"></script>
-    <script src="js/check_plz.js"></script>
+
+    <!--footer platzieren-->
+    <div id="footer"></div>
 </body>
-
-<!--footer platzieren-->
-<div id="footer"></div>
-
 </html>

@@ -1,4 +1,4 @@
-:root{
+:root {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
 }
 
@@ -6,84 +6,79 @@ a:hover {
     font-weight: bold;
 }
 
-header{
+header, main, footer {
     background-color: #E7F6DD;
+}
+
+header {
     margin: 1em;
     border:0px;
     padding: 0.5em;
     font-size: large;
 }
-a{
+
+a {
     color: green;
     font-size: larger;
 }
 
-main{
-    background-color: #E7F6DD;
+main {   
     margin: 1em;
     padding: 1em;
 }
 
-footer{
-    background-color: #E7F6DD;
+footer {
     margin: 1em;
     padding: 0.5em;
 }
 
-ul{
-    padding: 0%;
-}
-
-li{
+li {
     padding: 0.5em;
 }
 
-header nav ul li{
+header nav ul li {
     padding: 0.2em;
+    font-weight: lighter;
 }
 
-@media screen and (max-width: 768px){
-    nav ul li{
+@media screen and (max-width: 768px) {
+    nav ul li {
         display: flex;
         justify-content: center;
         display:inline;
     }   
 }
 
-.list-inline-item{
-    font-size: x-large;
-}
-
-.list-inline{
+.list-inline {
     padding: 0%;
     margin: 0%;
-    border: 0em;
 }
 
-button{
+button {
     font-size: large;
     margin: 1em;
     border: solid 5px;
 }
 
-footer p{
+footer p {
     margin: 0%;
 }
 
-footer nav ul li{
+footer ul li {
     padding: 0.2em;
+    font-weight: lighter;
+    font-size: larger;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     footer ul li{
         font-size: smaller;
-        display: flex;
-        justify-content: center;
         display:inline;
+        justify-content: center;
     }   
 }
 
-.spacer{
+.spacer {
     margin-bottom: 1.5em;
 }
 
@@ -92,11 +87,11 @@ footer nav ul li{
     font-size: larger;
 }
 
-.inactive{
+.inactive {
     color: grey;
 }
 
-img{
+img {
    max-width:100%; 
 }
 
@@ -107,13 +102,12 @@ img{
 }
 
 #plzOutput {
-    display: flex;
     display: inline;
     max-width: 100%;
     padding: 1em;
 }
 
-table td{
+table td {
     padding: 5px;
     font-weight: bold;
 }

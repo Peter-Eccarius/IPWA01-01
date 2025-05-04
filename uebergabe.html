@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Abholung</title>
+    <title>Übergabe</title>
     
     <!--Bootstrap einbinden-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,9 +20,6 @@
 
 <body>
     <main>
-        
-        
-
         <!--Spalte 1-->
         <div class="row">
             <div class="col-lg-6 col-sm-12">
@@ -30,7 +27,7 @@
                 <ul class="list-inline">
                     <li class="inactive">1. Der erste richtige Schritt ist getan: Sie wenden sich an uns, den Kleiderhilfe Global e.V.</li>
                     <li class="inactive">2. Wählen Sie zwischen einer Abholung bei Ihnen oder einer Abgabe vor Ort in der Geschäftsstelle</li>
-                    <li class="active">3. Geben Sie uns bitte alle notwendigen Informationen zur Abholadresse und zur Kleidung</li>
+                    <li class="active">3. Geben Sie uns bitte alle notwendigen Informationen zur Kleidung</li>
                     <li class="active">4. Wählen Sie das Krisengebiet, an welches die Spende gesendet werden soll</li>
                     <li class="inactive">5. Spende erfolgreich registriert. Herzlichen Dank!</li>
                 </ul>
@@ -42,36 +39,19 @@
                 <!--https://getbootstrap.com/docs/5.3/components/buttons/#link-functionality-caveat-->
                 
                 <!--Formularfelder-->
-                <Label for="name">Name</Label>
-                <input type="text" id="name" class="form-control" placeholder="Name">
-                <Label for="vorname">Vorname</Label>
-                <input type="text" id="vorname" class="form-control" placeholder="Vorname">
-                <Label for="strasse">Strasse und Hausnummer</Label>
-                <input type="text" id="strasse" class="form-control" placeholder="Strasse">
-                <Label for="ort">Ort</Label>
-                <input type="text" id="ort" class="form-control" placeholder="Ort">
-                <Label for="plz">Postleitzahl</Label>
-                <input type="number" id="plz" class="form-control" placeholder="Postleitzahl">
-                <button id= "CheckPLZButton" onclick="check_plz()" class="btn btn-outline-success">Postleitzahl prüfen</button>
-                <div id="plzOutput"></div>
-
-                <div class="spacer"></div>
-
                 <Label for="kleidung">Kleidung</Label>
                 <textarea id="kleidung" class="form-control" placeholder="Liste der Kleidungsstücke"></textarea>
                 <Label for="krisenland">Krisenland</Label>
                 <select id="krisengebiete-dropdown" class="form-select"></select>
                 <script src="js/krisengebiete.js"></script>
                 <div class="spacer"></div>
-                
+                <script src="js/formular.js"></script>
                 <button onclick="speichern()" class="btn btn-outline-success">Abschicken</button>
             </div>
         </div>
     </main>
     <!--header und footer interpretieren-->
     <script src="js/header_footer.js"></script>
-    <script src="js/formular.js"></script>
-    <script src="js/check_plz.js"></script>
 </body>
 
 <!--footer platzieren-->

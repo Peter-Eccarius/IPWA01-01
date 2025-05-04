@@ -38,8 +38,16 @@ li{
     padding: 0.5em;
 }
 
-nav ul li{
+header nav ul li{
     padding: 0.2em;
+}
+
+@media screen and (max-width: 768px){
+    nav ul li{
+        display: flex;
+        justify-content: center;
+        display:inline;
+    }   
 }
 
 .list-inline-item{
@@ -62,6 +70,19 @@ footer p{
     margin: 0%;
 }
 
+footer nav ul li{
+    padding: 0.2em;
+}
+
+@media screen and (max-width: 768px){
+    footer ul li{
+        font-size: smaller;
+        display: flex;
+        justify-content: center;
+        display:inline;
+    }   
+}
+
 .spacer{
     margin-bottom: 1.5em;
 }
@@ -78,4 +99,18 @@ footer p{
 img{
    max-width:100%; 
 }
+
+#CheckPLZButton {
+    display: flex;
+    display: inline;
+    margin: 1em;
+}
+
+#plzOutput {
+    display: flex;
+    display: inline;
+    max-width: 100%;
+    padding: 1em;
+}
+
 

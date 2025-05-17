@@ -111,3 +111,8 @@ table td {
     padding: 5px;
     font-weight: bold;
 }
+
+#plzOutput {
+    display: flex;
+    justify-content: flex-start;
+}

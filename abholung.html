@@ -50,8 +50,20 @@
                 <input type="text" id="ort" class="form-control" placeholder="Ort">
                 <Label for="plz">Postleitzahl</Label>
                 <input type="text" id="plz" class="form-control" placeholder="Postleitzahl">
-                <button id= "CheckPLZButton" onclick="check_plz()" class="btn btn-outline-success">Postleitzahl prüfen</button>
-                <div id="plzOutput"></div>
+                
+                <div class="row">
+                <div class="col-lg-4 col-sm-4">
+                    <button id= "CheckPLZButton" onclick="check_plz()" class="btn btn-outline-success">Postleitzahl prüfen</button>
+                </div>
+                
+                <div class="col-lg-8 col-sm-8">
+                    <div id="plzOutput"></div>
+                </div>
+                </div>
+
+
+                <!--<button id= "CheckPLZButton" onclick="check_plz()" class="btn btn-outline-success">Postleitzahl prüfen</button>-->
+                <!--<div id="plzOutput"></div>-->
                 <div class="spacer"></div>
                 <Label for="kleidung">Kleidung</Label>
                 <textarea id="kleidung" class="form-control" placeholder="Liste der Kleidungsstücke"></textarea>

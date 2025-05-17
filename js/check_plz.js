@@ -5,7 +5,7 @@ function check_plz() {
     if (plzInput.length === 5){
         const plzInputShort = plzInput.substring(0,2);
 
-        if (plzInputShort === plzOwn){
+        if (plzInputShort == plzOwn){
             document.getElementById("plzOutput").innerText = "Prima; die Postleitzahl ist für die Abholung qualifiziert. Fahren Sie fort.";
         }
         else {

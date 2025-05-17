@@ -14,4 +14,4 @@ fetch("json/krisengebiete.json")
             dropdown.appendChild(option);
         });
     })
-    .catch(error => console.error("Fehler", error));
+    .catch(error => console.error("Fehler beim Verarbeiten der JSON-Datei", error));

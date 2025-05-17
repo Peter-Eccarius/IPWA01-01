@@ -13,6 +13,7 @@
     <script src="js/header_footer.js"></script>
     <script src="js/formular.js"></script>
     <script src="js/check_plz.js"></script>
+    <script src="js/krisengebiete.js"></script>
 
     <title>Abholung einer Spende registrieren</title>
 </head>
@@ -45,33 +46,27 @@
                 <Label for="vorname">Vorname</Label>
                 <input type="text" id="vorname" class="form-control" placeholder="Vorname">
                 <Label for="strasse">Strasse und Hausnummer</Label>
-                <input type="text" id="strasse" class="form-control" placeholder="Strasse">
+                <input type="text" id="strasse" class="form-control" placeholder="Strasse und Hausnummer">
                 <Label for="ort">Ort</Label>
                 <input type="text" id="ort" class="form-control" placeholder="Ort">
                 <Label for="plz">Postleitzahl</Label>
                 <input type="text" id="plz" class="form-control" placeholder="Postleitzahl">
                 
                 <div class="row">
-                <div class="col-lg-4 col-sm-4">
-                    <button id= "CheckPLZButton" onclick="check_plz()" class="btn btn-outline-success">Postleitzahl prüfen</button>
-                </div>
-                
-                <div class="col-lg-8 col-sm-8">
-                    <div id="plzOutput"></div>
-                </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <button id= "CheckPLZButton" onclick="check_plz()" class="btn btn-outline-success">Postleitzahl prüfen</button>
+                    </div>
+                    <div class="col-lg-8 col-sm-8">
+                        <div id="plzOutput"></div>
+                    </div>
                 </div>
 
-
-                <!--<button id= "CheckPLZButton" onclick="check_plz()" class="btn btn-outline-success">Postleitzahl prüfen</button>-->
-                <!--<div id="plzOutput"></div>-->
                 <div class="spacer"></div>
                 <Label for="kleidung">Kleidung</Label>
                 <textarea id="kleidung" class="form-control" placeholder="Liste der Kleidungsstücke"></textarea>
                 <Label for="krisenland">Krisenland</Label>
                 <select id="krisengebiete-dropdown" class="form-select"></select>
-                <script src="js/krisengebiete.js"></script>
                 <div class="spacer"></div>
-                
                 <button onclick="AbholungSpeichern()" class="btn btn-outline-success">Abschicken</button>
             </div>
         </div>

@@ -42,11 +42,11 @@ header nav ul li {
 }
 
 @media screen and (max-width: 768px) {
-    nav ul li {
+    nav ul li, h1, h3, .btn {
         display: flex;
         justify-content: center;
-        display:inline;
-    }   
+    }
+   
 }
 
 .list-inline {
